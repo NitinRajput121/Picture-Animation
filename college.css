@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+html,body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color:#dadada;
+}
+#center{
+    position: relative; /* child container ko parent container ke equal banati h*/
+    height: 80%;
+    width: 57%;
+    
+    
+}
+.imageContainer{
+    overflow: hidden;
+    height: 100%;
+    width: 0%;
+    
+    position: absolute;  /*div ko ek ke upar ek lati h */
+    bottom: 3%;
+    
+}
+img{
+    height: 100%;/* height is set so that div flex kre na ki image*/    
+    
+    object-fit: cover; /*image ko div ke andar cover lr leti h or kuch part agr bhar jayega to cover ho jayega*/
+}
+#one{
+    width: 0% ;
+}
+.text{
+    position: absolute;
+    top: 60%;
+    overflow:hidden ;
+    width: 350px;
+    height: 80px;
+    
+    left: -10%;
+    z-index: 999;
+
+}
+.text h1{
+    font-size: 4vw;
+    position: absolute;
+    top: 100px;
+}
